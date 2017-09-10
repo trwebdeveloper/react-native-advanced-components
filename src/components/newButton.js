@@ -7,7 +7,6 @@ import {
   Dimensions,
 } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
-const {width,height} = Dimensions.get('window')
 
 
 export default class extends Component {
@@ -26,7 +25,10 @@ export default class extends Component {
         activeOpacity={0.8}
         style={buttonStyle}>
 
-        <Text style={textStyle}>{this.props.title}</Text>
+        <Text
+          style={textStyle}>
+          {this.props.title}
+        </Text>
 
       </TouchableOpacity>
     )
